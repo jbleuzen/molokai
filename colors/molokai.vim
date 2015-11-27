@@ -26,6 +26,9 @@ else
     let s:molokai_original = 0
 endif
 
+" Define Markdown highlight
+hi def link markdownCode         MarkdownCode
+hi def link markdownCodeDelimiter MarkdownCode
 
 hi Boolean         guifg=#AE81FF
 hi Character       guifg=#E6DB74
@@ -109,6 +112,8 @@ hi WildMenu        guifg=#66D9EF guibg=#000000
 
 hi TabLineFill     guifg=#1B1D1E guibg=#1B1D1E
 hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
+
+hi  MardownCode             guifg=#F92672               gui=italic
 
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
@@ -233,6 +238,8 @@ if &t_Co > 255
 
    hi SpecialKey      ctermfg=59
 
+   hi MarkdownCode    ctermfg=161 
+
    if exists("g:rehash256") && g:rehash256 == 1
        hi Normal       ctermfg=252 ctermbg=16
        hi CursorLine               ctermbg=236   cterm=none
@@ -269,6 +276,8 @@ if &t_Co > 255
        hi LineNr          ctermfg=239 ctermbg=235
        hi NonText         ctermfg=239
        hi SpecialKey      ctermfg=239
+
+       hi MarkdownCode    ctermfg=161 
    endif
 end
 
