@@ -284,7 +284,7 @@ end
 
 " Support of vim-buftabline
 hi TabLineSel ctermbg=148 ctermfg=22
-hi TabLineFill ctermfg=233
+hi TabLineFill ctermfg=233 ctermbg=250
 hi TabLine ctermbg=233 ctermfg=7 cterm=none
 hi PmenuSel ctermbg=237 ctermfg=245
 
